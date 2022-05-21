@@ -119,4 +119,5 @@ const buttons = document.querySelectorAll('btn');
 buttons.forEach(addEventListener('click', (e) => {
     let playerSelection = e.target.id;
     playRound(playerSelection, computerPlay());
+    return;
 }));
