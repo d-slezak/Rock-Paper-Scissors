@@ -91,5 +91,3 @@ function game()
     console.log("The Final Score Was You: " + playerScore + ", The Computer: " + computerScore);
 }
 
-game();
-
