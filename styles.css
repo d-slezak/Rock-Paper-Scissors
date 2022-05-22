@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
 
-    background-color: maroon;
+    background-color: #264653;
     color: white;
 
 }
@@ -14,8 +14,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    background-color: #457b9d;
+    color: black;
+    font-size: 40px;
 }
 
 #score{
     display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.scoreCard {
+    padding: 0em 4em;
+    text-align: center;
+}
+
+button {
+    background-color: #264653;
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+}
+
+button img {
+    height: 100px;
+    width: 100px;
+}
+
+button :hover{
+    background-color: #2a9d8f;
+    border-color: white;
 }
