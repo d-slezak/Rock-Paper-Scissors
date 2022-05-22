@@ -18,6 +18,7 @@ function checkScore(){
     {
         const result = document.getElementById('result');
         result.textContent = "You Won!"
+        alert("You Won!");
         playerScore = 0;
         computerScore = 0;
     }
@@ -25,6 +26,7 @@ function checkScore(){
     {
         const result = document.getElementById('result');
         result.textContent = "Computer Won!"
+        alert("You Lost!");
         playerScore = 0;
         computerScore = 0;
     }
@@ -87,33 +89,9 @@ function playRound(playerSelection, computerSelection)
 
 }
 
-function game()
-{
-    let playerScore = 0;
-    let computerScore = 0;
-    for (let i = 0; i< 5;i++){
-        let userInput = prompt("Choose Rock, Paper or Scissors");
-        let result = playRound(userInput,computerPlay());
-        if (result == 1)
-        {
-            console.log("You Won the Round");
-            playerScore++;
-        }
-        else if(result == -1)
-        {
-            console.log("You Lost the Round");
-            computerScore++;
-        }
-        else if(result == 0){
-            console.log("It's a Tie!");
-        }
-        
-    }
-    console.log("The Final Score Was You: " + playerScore + ", The Computer: " + computerScore);
-}
-
-const buttons = document.querySelectorAll('btn');
-buttons.forEach(addEventListener('click', (e) => {
+const buttons = document.querySelectorAll('button')
+console.log(buttons);
+buttons.forEach(button => button.addEventListener('click', (e) => {
     let playerSelection = e.target.id;
     playRound(playerSelection, computerPlay());
     return;

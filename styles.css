@@ -31,7 +31,16 @@
     border-width: 20px;
     border-radius: 25%;
     color: white;
+    width: 1420px;
 
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 #score img {

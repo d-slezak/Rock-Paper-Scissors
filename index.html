@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
@@ -16,14 +16,16 @@
         <div id = "desc">
             <p>First to score 5 points wins the game</p>
         </div>
-        <div id="result">Make your selection!</div>
         <div id = "score">
             <div class="scoreCard">
                 <p>Player</p>
                 <img id="playerSelection" src="img/question.png">
                 <p id="playerScore"> 0 </p>
             </div>
-            <img src="img/vs.png">
+            <div id = 'center'>
+                <div id="result">Make your selection!</div>
+                <img src="img/vs.png">
+            </div>
             <div class="scoreCard">
                 <p>Computer</p>
                 <img id="computerSelection" src="img/question.png">
@@ -31,9 +33,9 @@
             </div>
         </div>
         <div id="selection">
-            <button id="rock"><img src="img/rock.svg"></button>
-            <button id="paper"><img src="img/paper.svg"></button>
-            <button id="scissors"><img src="img/scissors.svg"></button>
+            <button id="rock" class="btn"><img src="img/rock.svg"></button>
+            <button id="paper" class="btn"><img src="img/paper.svg"></button>
+            <button id="scissors" class="btn"><img src="img/scissors.svg"></button>
         </div>
     </div>
     <div id="footer">
