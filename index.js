@@ -49,11 +49,8 @@ function updateScore(roundWinner)
 function playRound(playerSelection, computerSelection)
 {
 
-    const playerDisplay = document.getElementById('playerSelection');
-    playerDisplay.textContent = playerSelection;
-
-    const computerDisplay = document.getElementById('computerSelection');
-    computerDisplay.textContent = computerSelection;
+    const playerDisplay = document.getElementById('playerSelection').src=`img/${playerSelection}.svg`;
+    const computerDisplay = document.getElementById('computerSelection').src=`img/${computerSelection}.svg`;
 
     let roundWinner = "";
 
